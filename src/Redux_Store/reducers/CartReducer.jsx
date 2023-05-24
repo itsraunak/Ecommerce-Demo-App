@@ -71,7 +71,7 @@ const CartReducer = (state = initialState, action) => {
         ...state,
         item: state.item.map((item) => {
           if (item.id === action.payload.id) {
-            if (item.quantity == 0) {
+            if (item.quantity === 0) {
               return item;
             }
             return { ...item, quantity: item.quantity - 1 };

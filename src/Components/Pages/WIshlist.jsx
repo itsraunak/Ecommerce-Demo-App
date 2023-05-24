@@ -39,6 +39,7 @@ const Wishlist = () => {
                 className="unfavorite-btn"
                 onClick={() => dispatch(removeFromWishlist(item.id))}
                 src="https://cdn-icons-png.flaticon.com/512/7299/7299756.png"
+                alt="unfavorite-btn"
               />
             </div>
           </div>
